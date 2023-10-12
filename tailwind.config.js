@@ -29,7 +29,7 @@ module.exports = {
       aqua: 'var(--aqua)',
       orange: 'var(--orange)',
       gray: 'var(--gray)',
-
+      black: 'rgb(0 0 0)',
       redDim: 'var(--red-dim)',
       greenDim: 'var(--green-dim)',
       yellowDim: 'var(--yellow-dim)',
