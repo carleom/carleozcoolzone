@@ -1,24 +1,30 @@
-import fs from "fs";
-import { marked } from "marked";
-import path from "path";
-import matter from 'gray-matter';
-
-const getPosts = () => {
-    const files = fs.readdirSync('posts')
-    const filesWithMetaData = files.map(file => fs.readFileSync(path.join('posts', file)).toString())
-    const parsedMarkdown = filesWithMetaData.map(file => matter(file))
-    const posts = parsedMarkdown.map(post => post.data)
-    return posts
+function compareUpdates( a, b ) {
+    if ( a.updated.replace("-","") < b.updated.replace("-","") ){
+      return 1;
+    }
+    if ( a.updated.replace("-","") > b.updated.replace("-","") ){
+      return -1;
+    }
+    return 0;
 }
 
-// Sort by latest updates
-export const getLatestUpdates = () => {
-    let posts = getPosts()
-    console.log(posts)
+function compareCreated( a, b ) {
+    if ( a.created.replace("-","") < b.created.replace("-","") ){
+      return 1;
+    }
+    if ( a.created.replace("-","") > b.created.replace("-","") ){
+      return -1;
+    }
+    return 0;
+  }
 
+export const sortCreatedPosts = (posts) => {
+    let sorted = posts.sort(compareCreated)
+    return sorted
 }
 
-// Sort by latest updates
-export const getLatestPosts = () => {
 
+export const sortUpdatedPosts = (posts) => {
+    let sorted = posts.sort(compareUpdates)
+    return sorted
 }

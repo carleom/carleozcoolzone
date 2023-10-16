@@ -2,6 +2,7 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import matter from 'gray-matter';
+import { sortUpdatedPosts, sortCreatedPosts } from "@/utils";
 
 const Home = ({ posts }) => {
   return(
@@ -17,11 +18,12 @@ const Home = ({ posts }) => {
 };
 
 const RecentPosts = ({posts}) => {
+  const recentPosts = sortCreatedPosts(posts)
   return(
     <div>
       <h3 className="text-blue text-3xl">recent posts</h3>
       <Container>
-      {posts.map(post => {
+      {recentPosts.map(post => {
             return (
               <div key={post.slug}>
                 <Link href={"/blog/" + post.slug} className="text-xl">
@@ -36,11 +38,12 @@ const RecentPosts = ({posts}) => {
 }
 
 const RecentUpdates = ({posts}) => {
+  const recentUpdates = sortUpdatedPosts(posts)
   return(
     <div>
       <h3 className="text-purpleDim text-3xl">recent updates</h3>
       <Container>
-      {posts.map(post => {
+      {recentUpdates.map(post => {
             return (
               <div key={post.slug}>
                 <Link href={"/blog/" + post.slug}>

@@ -2,8 +2,8 @@
 title: Personal Site TODO list
 slug: Todo
 description: The todo list for my personal site
-created: 16-10-2023T12:21
-updated: 16-10-2023T13:19
+created: 2023-10-16T15:29
+updated: 2023-10-16T16:22
 ---
 ## site work
 - [x]  Setup post syncing with Obsidian
@@ -31,3 +31,4 @@ updated: 16-10-2023T13:19
 - [ ] Keyboard layout? maybe
 - [ ] EReaders?
 - [ ] potato diet
+- [ ] 

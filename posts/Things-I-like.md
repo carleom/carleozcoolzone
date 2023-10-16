@@ -1,7 +1,8 @@
 ---
 title: Things I like
-slug: Things-I-like
 description: A collection of all the stuff I like
-created: 16-10-2023T12:21
-updated: 16-10-2023T13:18
+slug: Things-I-like
+created: 2023-10-16T12:21
+updated: 2023-10-16T16:26
 ---
+
