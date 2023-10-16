@@ -1,6 +1,8 @@
 ---
 title: FAQ
 description: "Frequently Asked Questions"
+created: February 10, 2022
+updated: October 16, 2023
 ---
 
 ## What keyboard do you use?

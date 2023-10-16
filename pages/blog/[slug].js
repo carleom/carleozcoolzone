@@ -4,6 +4,8 @@ import path from "path";
 import matter from 'gray-matter';
 import Head from "next/head";
 import { marked } from "marked";
+import Container from "@/components/container";
+import Link from "next/link";
 
 
 const Post = ({htmlString, data}) => {
@@ -11,10 +13,30 @@ const Post = ({htmlString, data}) => {
         <Head>
             <title>{data.title}</title>
         </Head>
-        <div dangerouslySetInnerHTML={{__html: htmlString}}>
-        </div>
+        <h1 className="text-orange text-4xl pl-1 pt-6 pb-4">
+            <Link href="/">
+                <span>carleo</span>'s cool-zone
+            </Link>
+        </h1>
+        <PostHeader
+            data={data}
+        />
+        <Container>
+            <div dangerouslySetInnerHTML={{__html: htmlString}}></div>
+        </Container>
         </>
 };
+
+const PostHeader = ({data}) => {
+    return(
+        <div className="text-fg">
+            <h2 className="text-blue text-3xl">{data.title}</h2>
+            <p>{data.description}</p>
+            <p>Date Created: {data.created}</p>
+            <p>Last Updated: {data.updated}</p>
+        </div>
+    )
+}
 
 export const getStaticPaths = async () => {
 
@@ -42,7 +64,7 @@ export const getStaticProps = async ({ params: { slug } }) => {
         props: {
             htmlString,
             data: parsedMarkdown.data
-        }
+        } 
     }
 }
 

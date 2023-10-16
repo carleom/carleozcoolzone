@@ -11,3 +11,38 @@ html {
 h1 > span {
     text-decoration: underline wavy red;
 }
+
+ol {
+    margin: 40px;
+    list-style-type: decimal;
+}
+
+ul {
+    margin: 40px;
+    margin-top: 10px;
+    list-style: decimal;
+}
+
+pre code {
+    display: block;
+    background-color: var(--bg1);
+    color: var(--aqua-dim);
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    max-width: 100%;
+    min-width: 100px;
+    padding: 5px;
+}
+
+h2, h3, h4 {
+    margin-top: 20px;
+}
+
+div > h2 {
+    color: var(--orange)
+}
+
+div > h3 {
+    color: var(--orange-dim)
+}
