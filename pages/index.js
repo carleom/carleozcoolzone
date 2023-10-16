@@ -1,29 +1,31 @@
 import Link from "next/link";
 import fs from "fs";
+import path from "path";
+import matter from 'gray-matter';
 
-const Home = ({ slugs }) => {
+const Home = ({ posts }) => {
   return(
     <>
       <Intro />
       <div className="space-y-8">
-        <RecentPosts slugs={slugs}/>
-        <RecentUpdates slugs={slugs}/>
+        <RecentPosts posts={posts}/>
+        <RecentUpdates posts={posts}/>
         <DirectLinks/>
       </div>
     </>
   )
 };
 
-const RecentPosts = ({slugs}) => {
+const RecentPosts = ({posts}) => {
   return(
     <div>
       <h3 className="text-blue text-3xl">recent posts</h3>
       <Container>
-      {slugs.map(slug => {
+      {posts.map(post => {
             return (
-              <div key={slug}>
-                <Link href={"/blog/" + slug} className="text-xl">
-                  {slug}
+              <div key={post.slug}>
+                <Link href={"/blog/" + post.slug} className="text-xl">
+                  {post.title}
                 </Link>
               </div>
             );
@@ -33,16 +35,16 @@ const RecentPosts = ({slugs}) => {
   )
 }
 
-const RecentUpdates = ({slugs}) => {
+const RecentUpdates = ({posts}) => {
   return(
     <div>
       <h3 className="text-purpleDim text-3xl">recent updates</h3>
       <Container>
-      {slugs.map(slug => {
+      {posts.map(post => {
             return (
-              <div key={slug}>
-                <Link href={"/blog/" + slug}>
-                  {slug}
+              <div key={post.slug}>
+                <Link href={"/blog/" + post.slug}>
+                  {post.title}
                 </Link>
               </div>
             );
@@ -92,11 +94,19 @@ const DirectLinks = () => {
 
 export const getStaticProps = async () => {
   const files = fs.readdirSync("posts");
+  const filesWithMetaData = files.map(file => fs.readFileSync(path.join('posts', file)).toString())
+  const parsedMarkdown = filesWithMetaData.map(file => matter(file))
+  const posts = parsedMarkdown.map(post => post.data)
   return {
     props: {
-      slugs: files.map(filename => filename.replace(".md", ""))
+      posts: posts,
+      slugs: files.map(filename => ({
+        slug: filename.replace(".md","")
+      }))
     }
   };
 };
+
+
 
 export default Home;

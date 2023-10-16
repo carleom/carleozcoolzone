@@ -1,5 +1,6 @@
 ---
 title: Personal Site TODO list
+slug: Todo
 description: The todo list for my personal site
 created: 16-10-2023T12:21
 updated: 16-10-2023T13:19

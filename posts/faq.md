@@ -1,5 +1,6 @@
 ---
 title: FAQ
+slug: faq
 description: "Frequently Asked Questions"
 created: February 10, 2022
 updated: October 16, 2023

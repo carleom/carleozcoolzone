@@ -14,6 +14,7 @@ const getPosts = () => {
 // Sort by latest updates
 export const getLatestUpdates = () => {
     let posts = getPosts()
+    console.log(posts)
 
 }
 

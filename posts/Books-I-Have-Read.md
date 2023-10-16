@@ -1,5 +1,6 @@
 ---
 title: Books I Have Read
+slug: Books-I-Have-Read
 description: On going list of books I have read, organized by year.
 created: 16-10-2023T12:21
 updated: 16-10-2023T13:17
