@@ -35,6 +35,4 @@ updated: 2023-10-17T11:02
 - [ ] EReaders?
 - [ ] potato diet
 - [ ] the perfect watch
-- [ ] getting pip'd
-- [ ] Why does it always feel like I am begging for jobs?
 
