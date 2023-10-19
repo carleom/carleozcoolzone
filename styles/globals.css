@@ -39,10 +39,15 @@ h2, h3, h4 {
     margin-top: 20px;
 }
 
-div > h2 {
+div > h1 {
+    font-size: larger;
     color: var(--orange)
 }
 
 div > h3 {
     color: var(--orange-dim)
+}
+
+a:visited {
+    color: var(--purple-dim)
 }

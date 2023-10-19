@@ -3,10 +3,13 @@ title: Personal Site TODO list
 slug: Todo
 description: The todo list for my personal site
 created: 2023-10-16T15:29
-updated: 2023-10-16T16:22
+updated: 2023-10-17T11:02
 ---
 ## site work
 - [x]  Setup post syncing with Obsidian
+- [ ] about page
+	- [x] Page created
+	- [ ] Actual content
 - [ ] setup the kinda tweet thing with discord
 	- [ ] discord bot
 	- [ ] kinda tweet page
@@ -21,7 +24,7 @@ updated: 2023-10-16T16:22
 	- [ ] Link formatting
 - [ ] Accessibility
 - [ ] Host blog
-- [ ] filter front page recent lists to properly show
+- [x] filter front page recent lists to properly show
 
 ## posts in the works
 - [x] books I read for year
@@ -31,4 +34,7 @@ updated: 2023-10-16T16:22
 - [ ] Keyboard layout? maybe
 - [ ] EReaders?
 - [ ] potato diet
-- [ ] 
+- [ ] the perfect watch
+- [ ] getting pip'd
+- [ ] Why does it always feel like I am begging for jobs?
+

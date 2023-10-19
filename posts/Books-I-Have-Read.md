@@ -3,7 +3,7 @@ title: Books I Have Read
 description: On going list of books I have read, organized by year.
 slug: Books-I-Have-Read
 created: 2023-10-16T12:21
-updated: 2023-10-16T16:26
+updated: 2023-10-16T17:04
 ---
 ## 2023
 I have never really tracked this before. I want to organize this by months eventually but I don't remember when I actually read these books, only that I did this year. 

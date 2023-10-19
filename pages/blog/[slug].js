@@ -5,26 +5,24 @@ import matter from 'gray-matter';
 import Head from "next/head";
 import { marked } from "marked";
 import Container from "@/components/container";
-import Link from "next/link";
+import Intro from "@/components/intro";
 
 
 const Post = ({htmlString, data}) => {
-    return <>
-        <Head>
-            <title>{data.title}</title>
-        </Head>
-        <h1 className="text-orange text-4xl pl-1 pt-6 pb-4">
-            <Link href="/">
-                <span>carleo</span>'s cool-zone
-            </Link>
-        </h1>
-        <PostHeader
-            data={data}
-        />
-        <Container>
-            <div dangerouslySetInnerHTML={{__html: htmlString}}></div>
-        </Container>
-        </>
+    return( 
+        <div>
+            <Head>
+                <title>{data.title}</title>
+            </Head>
+            <Intro />
+            <PostHeader
+                data={data}
+            />
+            <Container>
+                <div dangerouslySetInnerHTML={{__html: htmlString}}></div>
+            </Container>
+        </div>
+    )
 };
 
 const PostHeader = ({data}) => {
@@ -39,9 +37,7 @@ const PostHeader = ({data}) => {
 }
 
 export const getStaticPaths = async () => {
-
     const files = fs.readdirSync('posts')
-
     return {
         paths: files.map(filename => ({
             params: {
@@ -55,9 +51,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params: { slug } }) => {
     // posts/faq.md
     const markdownWithMetadata = fs.readFileSync(path.join('posts', slug + ".md")).toString();
-
     const parsedMarkdown = matter(markdownWithMetadata)
-
     const htmlString = marked(parsedMarkdown.content)
 
     return {

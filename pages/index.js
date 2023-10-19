@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from 'gray-matter';
 import { sortUpdatedPosts, sortCreatedPosts } from "@/utils";
+import Intro from "@/components/intro";
 
 const Home = ({ posts }) => {
   return(
@@ -41,7 +42,7 @@ const RecentUpdates = ({posts}) => {
   const recentUpdates = sortUpdatedPosts(posts)
   return(
     <div>
-      <h3 className="text-purpleDim text-3xl">recent updates</h3>
+      <h3 className="text-green text-3xl">recent updates</h3>
       <Container>
       {recentUpdates.map(post => {
             return (
@@ -64,7 +65,7 @@ const Container = (props) => {
       rounded-lg
       m-1 p-3 
       text-fg1 
-      border-2 border-black 
+      border-2 border-black
       shadow-lg 
       flex flex-col
       text-xl">
@@ -73,14 +74,7 @@ const Container = (props) => {
   )
 }
 
-const Intro = () => {
-  return (
-    <div className="mb-6">
-      <h1 className="text-orange text-4xl pl-1 pt-6 pb-4"><span>carleo</span>'s cool-zone</h1>
-      <p className="text-fg ml-2">hi, this my blog where I post stuff like projects, thoughts, and stuff I like</p>
-    </div>
-  )
-}
+
 
 const DirectLinks = () => {
   return (
