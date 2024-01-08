@@ -5,6 +5,7 @@ slug: Oregon-Hill-Rock-Hunt
 created: 2024-01-08T13:02
 updated: 2024-01-08T14:37
 ---
+
 [Website](https://ohrockhunt.love/)
 # About
 When I was a child, I was really obsessed with treasure hunts. I remember reading about how to make a treasure map and hide it in the "Dangerous Book for Boys". I was sold on the idea that hiding maps to treasure was just something everyone did at some point and the world was full of them. Id comb the neighborhood with a metal detector and pull out loose bricks expecting to find some sort of hint to start an adventure. Unfortunately no adventures ever came, but the spirit of it all stuck with me. I wanted to do something similar for the handful of kids / people in my neighborhood so I came up with the 'Oregon Hill Rock Hunt'. 
@@ -30,4 +31,4 @@ I wanted all the orange ones to kinda be like 'ads'. I hid them in plain sight a
 
 I also didn't obscure the 'ID' of the rocks too well. You could find the 'ID' necessary to claim a rock on the rock image URL. And then from there you can claim any rock. I have a plan to scramble the IDs. But I figured I would cross that bridge once someone actually abuses the website.
 # Closing Thoughts
-This was a good project for me to get back into coding for fun! After a few years of only doing it for work I kinda lost my passion for it. But this has reminded me how easy it is to make fun things. 
+This was a good project for me to get back into coding for fun! After a few years of only doing it for work I kinda lost my passion for it. But this has reminded me how easy it is to make fun things. This blog post is also still a WIP. I'd like to have a better one written up when I migrate this blog to Netlify

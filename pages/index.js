@@ -40,7 +40,6 @@ const RecentPosts = ({posts}) => {
 
 const RecentUpdates = ({posts}) => {
   const recentUpdates = sortUpdatedPosts(posts)
-  console.log(recentUpdates)
   return(
     <div>
       <h3 className="text-green text-3xl">recent updates</h3>
