@@ -1,4 +1,7 @@
 ---
+title: Oregon Hill Rock Hunt
+description: A Rock Hunt Project
+slug: Oregon-Hill-Rock-Hunt
 created: 2024-01-08T13:02
 updated: 2024-01-08T14:37
 ---
