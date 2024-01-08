@@ -31,6 +31,7 @@ I originally was going to use react native since I have some more experience usi
 - Hitting some dependency issues when setting up the RSS feed. The music app seems to not play nicely with the pre written RSS feed plugins.
 - Finally found an updated rss flutter package for flutter 3
 - RSS Feed is pulled into widget. Need to build widget based on the pulled data now.
+- Progress on this has halted. I haven't been listening to music as much as I thought I would be lately. (Maybe its because I don't have music app I like anymore lol).
 
 # Notes
 - Bottom right hand of vscode has where you start up the phone emulators. Once a phone emulator is spun up, when you run `flutter run` you can pick the phone from the list.
