@@ -31,4 +31,4 @@ I wanted all the orange ones to kinda be like 'ads'. I hid them in plain sight a
 
 I also didn't obscure the 'ID' of the rocks too well. You could find the 'ID' necessary to claim a rock on the rock image URL. And then from there you can claim any rock. I have a plan to scramble the IDs. But I figured I would cross that bridge once someone actually abuses the website.
 # Closing Thoughts
-This was a good project for me to get back into coding for fun! After a few years of only doing it for work I kinda lost my passion for it. But this has reminded me how easy it is to make fun things. This blog post is also still a WIP. I'd like to have a better one written up when I migrate this blog to Netlify
+This was a good project for me to get back into coding for fun! After a few years of only doing it for work I kinda lost my passion for it. But this has reminded me how easy it is to make fun things. This blog post is also still kinda a WIP.
