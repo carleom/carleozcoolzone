@@ -6,7 +6,10 @@ created: 2023-10-16T15:29
 updated: 2023-10-17T11:02
 ---
 ## site work
-- [ ] Migrate everything to Netlify / contentful
+- [ ] about page
+- [ ] blog page
+- [ ] make or find a plugin to manage blog posts from vscode
+
 ## posts in the works
 - [x] books I read for year
 - [ ] things i like
